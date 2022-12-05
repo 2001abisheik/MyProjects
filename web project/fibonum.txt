@@ -1,0 +1,19 @@
+function fibo(n){
+var output=[];
+if(n>=1)
+  output.push(0);
+if(n>=2)
+  output.push(1);
+if(n>2){
+ for(var i=0;i<n-2;i++){
+    var val1=output[i];
+    var val2=output[i+1];
+    var result=val1+val2;
+    output.push(result);
+  }
+  };
+
+return output;
+};
+fibo(3);
+console.log(fibo(10));

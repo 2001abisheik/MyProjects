@@ -1,0 +1,11 @@
+function lifeInWeeks(age) {
+    var lifeLeft =90;
+lifeLeft-=age;
+    var days=365*lifeLeft;
+    var weeks=52*lifeLeft;
+    var months=12*lifeLeft;
+console.log("You have"+days+"days,"+weeks+"weeks, and"+months+"months left.");
+}
+var age=prompt("Enter your age: ");
+lifeInWeeks(age=age);
+

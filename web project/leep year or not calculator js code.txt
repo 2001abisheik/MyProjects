@@ -1,0 +1,21 @@
+function isLeap(year) {
+var result;
+    
+if (year%4===0){
+    if(year%100===0){
+        if (year%400===0){
+            result="leap year."
+        }
+        else
+            result="Not leap year."
+    }
+    else
+ result="leap year."
+}
+else
+ result="Not leap year."
+return result;
+}
+isLeap(2012);
+var a=isLeap(2012);
+console.log(a);
